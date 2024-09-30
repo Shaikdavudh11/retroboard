@@ -3,7 +3,7 @@
     "arn": {
       "description": "The value of the arn output",
       "sensitive": false,
-      "value": "${aws_dynamodb_table.this.arn}"
+      "value": "${var.arn}"
     }
   }
 }

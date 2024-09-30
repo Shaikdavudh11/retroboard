@@ -41,29 +41,9 @@
       "source": "./modules/aws_iam_role_policy"
     },
     "appcd_17034d53-f503-50b9-9b92-708dcc3ae76c": {
-      "attribute": [
-        {
-          "name": "id",
-          "type": "S"
-        }
-      ],
-      "billing_mode": "PROVISIONED",
-      "global_secondary_indexes": [],
-      "hash_key": "id",
-      "local_secondary_indexes": [],
-      "point_in_time_recovery_enabled": true,
-      "range_key": "",
-      "read_capacity": 1,
-      "server_side_encryption_enabled": true,
-      "source": "./modules/aws_dynamodb",
-      "stream_view_type": "NEW_IMAGE",
-      "table_name": "my-table",
-      "tags": {
-        "appstack": "retero-shaik",
-        "component": "retroboard"
-      },
-      "ttl": [],
-      "write_capacity": 1
+      "arn": "retero-b",
+      "resource_type": "aws_dynamodb",
+      "source": "./modules/aws_external"
     },
     "appcd_57d0800b-54eb-5ea5-a468-c1211e91bb07": {
       "content_based_deduplication": false,
@@ -115,7 +95,7 @@
       "application_failure_feedback_role_arn": null,
       "application_success_feedback_role_arn": null,
       "application_success_feedback_sample_rate": null,
-      "content_based_deduplication": false,
+      "content_based_deduplication": true,
       "delivery_policy": null,
       "display_name": null,
       "fifo_topic": false,
